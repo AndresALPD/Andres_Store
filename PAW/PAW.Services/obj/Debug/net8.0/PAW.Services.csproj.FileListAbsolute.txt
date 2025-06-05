@@ -1,0 +1,17 @@
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\bin\Debug\net8.0\PAW.Services.deps.json
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\bin\Debug\net8.0\PAW.Services.dll
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\bin\Debug\net8.0\PAW.Services.pdb
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\PAW.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\PAW.Services.AssemblyInfoInputs.cache
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\PAW.Services.AssemblyInfo.cs
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\PAW.Services.csproj.CoreCompileInputs.cache
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\PAW.Services.dll
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\refint\PAW.Services.dll
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\PAW.Services.pdb
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\ref\PAW.Services.dll
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\bin\Debug\net8.0\PAW.Architecture.dll
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\bin\Debug\net8.0\PAW.Models.dll
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\bin\Debug\net8.0\PAW.Architecture.pdb
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\bin\Debug\net8.0\PAW.Models.pdb
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\PAW.Services.csproj.AssemblyReference.cache
+C:\Users\XPC\Documents\Andres Clases\Progra Avanzada Web\Clases\Clase 1\PAW\PAW.Services\obj\Debug\net8.0\PAW.Serv.563E4CB1.Up2Date
