@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zz0BbVWcy8U=",
+  "dgSpecHash": "ZhvJ/UdnHCQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Data\\PAW.Data.csproj",
+  "projectFilePath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\PAW.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\XPC\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\XPC\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

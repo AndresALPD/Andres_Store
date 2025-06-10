@@ -14,13 +14,6 @@ public class CatalogController (IBusinessCatalog businessCatalog): Controller
         return await businessCatalog.GetAllCatalogsAsync();
    }
 
-    /*[HttpGet(Name = "GetCatalogById")]
-    public async Task<ActionResult<Catalog>> GetById(int id)
-    {
-        var catalog = await businessCatalog.GetAllCatalogsAsync(id);
-        return catalog;
-    }*/
-
     [HttpGet("{id:int}", Name = "GetCatalogById")]
     public async Task<ActionResult<Catalog>> GetById(int id)
     {
@@ -29,9 +22,13 @@ public class CatalogController (IBusinessCatalog businessCatalog): Controller
     }
 
     [HttpPost]
-    public async Task<bool> Save([FromBody] Catalog catalog)
+    public async Task<bool> Save([FromBody] IEnumerable<Catalog> catalogs)
     {
-        return await businessCatalog.SaveCatalogAsync(catalog);
+        foreach (var item in catalogs)
+        {
+            await businessCatalog.SaveCatalogAsync(item);
+        }
+        return true;
     }
 
     [HttpDelete]
@@ -39,6 +36,4 @@ public class CatalogController (IBusinessCatalog businessCatalog): Controller
     {
         return await businessCatalog.DeleteCatalogAsync(catalog);
     }
-
-
 }

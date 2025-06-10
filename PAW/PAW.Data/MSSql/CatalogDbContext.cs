@@ -28,13 +28,11 @@ public partial class CatalogDbContext : DbContext
     {
         modelBuilder.Entity<Catalog>(entity =>
         {
-            entity
-                .HasNoKey()
-                .ToTable("Catalog");
+            entity.HasKey(e => e.Identifier);
 
-            entity.Property(e => e.Identifier)
-                .ValueGeneratedOnAdd()
-                .HasColumnName("identifier");
+            entity.ToTable("Catalog");
+
+            entity.Property(e => e.Identifier).HasColumnName("identifier");
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .HasColumnName("name");

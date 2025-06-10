@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PAW.Architecture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+916f2e32e1efa11f88ca203e8ed80db05ec89e1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("PAW.Architecture")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PAW.Architecture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

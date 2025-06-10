@@ -674,11 +674,20 @@
       },
       "PAW.Business/1.0.0": {
         "dependencies": {
+          "PAW.Core": "1.0.0",
           "PAW.Models": "1.0.0",
           "PAW.Repositories": "1.0.0"
         },
         "runtime": {
           "PAW.Business.dll": {}
+        }
+      },
+      "PAW.Core/1.0.0": {
+        "dependencies": {
+          "PAW.Models": "1.0.0"
+        },
+        "runtime": {
+          "PAW.Core.dll": {}
         }
       },
       "PAW.Data/1.0.0": {
@@ -1157,6 +1166,11 @@
       "sha512": ""
     },
     "PAW.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PAW.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

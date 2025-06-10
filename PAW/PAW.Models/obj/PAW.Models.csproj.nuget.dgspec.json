@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj": {}
+    "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj": {}
   },
   "projects": {
-    "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj": {
+    "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj",
+        "projectUniqueName": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj",
         "projectName": "PAW.Models",
-        "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj",
+        "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj",
         "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\obj\\",
+        "outputPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Mvc\\PAW.Mvc.csproj": {}
+    "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\PAW.Mvc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Architecture\\PAW.Architecture.csproj": {
+    "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Architecture\\PAW.Architecture.csproj",
+        "projectUniqueName": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj",
         "projectName": "PAW.Architecture",
-        "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Architecture\\PAW.Architecture.csproj",
+        "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj",
         "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Architecture\\obj\\",
+        "outputPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj": {
-                "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj"
+              "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj": {
+                "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj": {
+    "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj",
+        "projectUniqueName": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj",
         "projectName": "PAW.Models",
-        "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj",
+        "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj",
         "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\obj\\",
+        "outputPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -130,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Mvc\\PAW.Mvc.csproj": {
+    "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\PAW.Mvc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Mvc\\PAW.Mvc.csproj",
+        "projectUniqueName": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\PAW.Mvc.csproj",
         "projectName": "PAW.Mvc",
-        "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Mvc\\PAW.Mvc.csproj",
+        "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\PAW.Mvc.csproj",
         "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Mvc\\obj\\",
+        "outputPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,14 +155,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Architecture\\PAW.Architecture.csproj": {
-                "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Architecture\\PAW.Architecture.csproj"
+              "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj": {
+                "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj"
               },
-              "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj": {
-                "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Models\\PAW.Models.csproj"
+              "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj": {
+                "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj"
               },
-              "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Services\\PAW.Services.csproj": {
-                "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Services\\PAW.Services.csproj"
+              "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\PAW.Services.csproj": {
+                "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\PAW.Services.csproj"
               }
             }
           }
@@ -182,6 +182,12 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.7, )"
@@ -210,14 +216,14 @@
         }
       }
     },
-    "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Services\\PAW.Services.csproj": {
+    "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\PAW.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Services\\PAW.Services.csproj",
+        "projectUniqueName": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\PAW.Services.csproj",
         "projectName": "PAW.Services",
-        "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Services\\PAW.Services.csproj",
+        "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\PAW.Services.csproj",
         "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Services\\obj\\",
+        "outputPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\XPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -235,8 +241,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Architecture\\PAW.Architecture.csproj": {
-                "projectPath": "C:\\Users\\XPC\\Documents\\Andres Clases\\Progra Avanzada Web\\Clases\\Clase 1\\PAW\\PAW.Architecture\\PAW.Architecture.csproj"
+              "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj": {
+                "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj"
               }
             }
           }
