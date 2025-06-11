@@ -36,6 +36,7 @@ public partial class CatalogDbContext : DbContext
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .HasColumnName("name");
+            entity.Property(e => e.ModifiedDatee).HasColumnName("modifieddatee");
         });
 
         OnModelCreatingPartial(modelBuilder);

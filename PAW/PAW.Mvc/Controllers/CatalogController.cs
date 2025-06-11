@@ -48,12 +48,12 @@ namespace PAW.Mvc.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Identifier,Name")] Catalog catalog)
+        public async Task<IActionResult> Create([Bind("Identifier,Name,ModifiedDatee")] Catalog catalog)
         {
             //if (ModelState.IsValid)
             //{
-                var result = await catalogService.SaveCatalogsAsync([catalog]);
-                return RedirectToAction(nameof(Index));
+            var result = await catalogService.SaveCatalogsAsync([catalog]);
+            return RedirectToAction(nameof(Index));
             //}
             return View(catalog);
         }
@@ -92,9 +92,9 @@ namespace PAW.Mvc.Controllers
                 {
                     var result = await catalogService.SaveCatalogsAsync([catalog]);
                 }
-                catch 
+                catch
                 {
-                    throw; 
+                    throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -111,7 +111,7 @@ namespace PAW.Mvc.Controllers
             var catalog = await catalogService.GetCatalogAsync((int)id);
             if (catalog == null)
                 return NotFound();
-            
+
             return View(catalog);
         }
 

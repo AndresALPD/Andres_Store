@@ -10,7 +10,7 @@ namespace PAW.Mvc.Helper.Converters
             return new CatalogViewModel
             {
                 Id = catalog.Identifier,
-                Name = catalog.Name
+                Name = catalog.Name,
             };
         }
     }

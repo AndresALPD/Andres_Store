@@ -7,7 +7,7 @@ using PAW.Services;
 
 namespace PAW.Mvc.Controllers;
 
-public class _CatalogController(ICatalogService catalogService) : Controller
+public class _1CatalogController(ICatalogService catalogService) : Controller
 {
     public async Task<IActionResult> Index()
     {
