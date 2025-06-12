@@ -1,54 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\",
+  "WorkspaceRootPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1A5F4829-37D4-44E7-9487-192303F1F2F5}|PAW.Core\\PAW.Core.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.core\\extensions\\entityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1A5F4829-37D4-44E7-9487-192303F1F2F5}|PAW.Core\\PAW.Core.csproj|solutionrelative:paw.core\\extensions\\entityextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E30BA23-F61F-437A-B10C-D5D2069AC61A}|PAW.MinimalApi\\PAW.MinimalApi.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E30BA23-F61F-437A-B10C-D5D2069AC61A}|PAW.MinimalApi\\PAW.MinimalApi.csproj|solutionrelative:paw.minimalapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C4A3D04-A29F-4A56-86FF-34206AFF8D8B}|PAW.API\\PAW.API.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.api\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C4A3D04-A29F-4A56-86FF-34206AFF8D8B}|PAW.API\\PAW.API.csproj|solutionrelative:paw.api\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED33EC83-CDD0-4EAE-B24F-917995816AD0}|PAW.Repositories\\PAW.Repositories.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED33EC83-CDD0-4EAE-B24F-917995816AD0}|PAW.Repositories\\PAW.Repositories.csproj|solutionrelative:paw.repositories\\repositorybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C0127B88-467F-4B3D-9210-B6C84C4E2AF7}|PAW.Services\\PAW.Services.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C0127B88-467F-4B3D-9210-B6C84C4E2AF7}|PAW.Services\\PAW.Services.csproj|solutionrelative:paw.services\\catalogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ED33EC83-CDD0-4EAE-B24F-917995816AD0}|PAW.Repositories\\PAW.Repositories.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.repositories\\repositorycatalogtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED33EC83-CDD0-4EAE-B24F-917995816AD0}|PAW.Repositories\\PAW.Repositories.csproj|solutionrelative:paw.repositories\\repositorycatalogtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.mvc\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.mvc\\helper\\converters\\converter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\helper\\converters\\converter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.mvc\\controllers\\_catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\_catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7E30BA23-F61F-437A-B10C-D5D2069AC61A}|PAW.MinimalApi\\PAW.MinimalApi.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.minimalapi\\factory\\catalogfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E30BA23-F61F-437A-B10C-D5D2069AC61A}|PAW.MinimalApi\\PAW.MinimalApi.csproj|solutionrelative:paw.minimalapi\\factory\\catalogfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98E5FDAA-8416-4F44-B2BA-AC823987C7F5}|PAW.Models\\PAW.Models.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.models\\pawmodels\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98E5FDAA-8416-4F44-B2BA-AC823987C7F5}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\pawmodels\\entity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{98E5FDAA-8416-4F44-B2BA-AC823987C7F5}|PAW.Models\\PAW.Models.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.models\\entities\\catalogtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{98E5FDAA-8416-4F44-B2BA-AC823987C7F5}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\catalogtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98E5FDAA-8416-4F44-B2BA-AC823987C7F5}|PAW.Models\\PAW.Models.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.models\\entities\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{98E5FDAA-8416-4F44-B2BA-AC823987C7F5}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\entities\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{109ED7C4-9468-4B98-B6FB-530480BE5B59}|PAW.Data\\PAW.Data.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.data\\mssql\\catalogdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{109ED7C4-9468-4B98-B6FB-530480BE5B59}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\mssql\\catalogdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9ED85D8F-B996-4FD5-99FB-172791DCCF5C}|PAW.Architecture\\PAW.Architecture.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.architecture\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9ED85D8F-B996-4FD5-99FB-172791DCCF5C}|PAW.Architecture\\PAW.Architecture.csproj|solutionrelative:paw.architecture\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.mvc\\views\\catalog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\catalog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E730F95-EF1A-4F64-A7E8-D363A0DC2CAE}|PAW.Business\\PAW.Business.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.business\\businesscatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1E730F95-EF1A-4F64-A7E8-D363A0DC2CAE}|PAW.Business\\PAW.Business.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.business\\businesscatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E730F95-EF1A-4F64-A7E8-D363A0DC2CAE}|PAW.Business\\PAW.Business.csproj|solutionrelative:paw.business\\businesscatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{98E5FDAA-8416-4F44-B2BA-AC823987C7F5}|PAW.Models\\PAW.Models.csproj|c:\\users\\xpc\\source\\repos\\pharmacy_store\\paw\\paw.models\\pawmodels\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C4A3D04-A29F-4A56-86FF-34206AFF8D8B}|PAW.API\\PAW.API.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4A3D04-A29F-4A56-86FF-34206AFF8D8B}|PAW.API\\PAW.API.csproj|solutionrelative:paw.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{98E5FDAA-8416-4F44-B2BA-AC823987C7F5}|PAW.Models\\PAW.Models.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.models\\pawmodels\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{98E5FDAA-8416-4F44-B2BA-AC823987C7F5}|PAW.Models\\PAW.Models.csproj|solutionrelative:paw.models\\pawmodels\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{109ED7C4-9468-4B98-B6FB-530480BE5B59}|PAW.Data\\PAW.Data.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.data\\resources\\scripts.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{109ED7C4-9468-4B98-B6FB-530480BE5B59}|PAW.Data\\PAW.Data.csproj|solutionrelative:paw.data\\resources\\scripts.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.mvc\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E48F438-6254-41CA-B1CB-B072A3D2B0FF}|PAW.Mvc\\PAW.Mvc.csproj|solutionrelative:paw.mvc\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C4A3D04-A29F-4A56-86FF-34206AFF8D8B}|PAW.API\\PAW.API.csproj|c:\\users\\xpc\\source\\repos\\andres_store\\paw\\paw.api\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C4A3D04-A29F-4A56-86FF-34206AFF8D8B}|PAW.API\\PAW.API.csproj|solutionrelative:paw.api\\controllers\\catalogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,153 +66,189 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EntityExtensions.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Core\\Extensions\\EntityExtensions.cs",
-              "RelativeDocumentMoniker": "PAW.Core\\Extensions\\EntityExtensions.cs",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Core\\Extensions\\EntityExtensions.cs",
-              "RelativeToolTip": "PAW.Core\\Extensions\\EntityExtensions.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T05:51:31.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Entity.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Models\\PAWModels\\Entity.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\PAWModels\\Entity.cs",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Models\\PAWModels\\Entity.cs",
-              "RelativeToolTip": "PAW.Models\\PAWModels\\Entity.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBYAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T05:49:52.498Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_CatalogController.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Controllers\\_CatalogController.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\_CatalogController.cs",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Controllers\\_CatalogController.cs",
-              "RelativeToolTip": "PAW.Mvc\\Controllers\\_CatalogController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T04:10:14.839Z"
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-07T04:09:43.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Views\\Catalog\\Index.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Catalog\\Index.cshtml",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Views\\Catalog\\Index.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Catalog\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-07T04:09:09.827Z"
+              "Title": "DateTimeExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\Extensions\\DateTimeExtensions.cs",
+              "RelativeDocumentMoniker": "PAW.Architecture\\Extensions\\DateTimeExtensions.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\Extensions\\DateTimeExtensions.cs",
+              "RelativeToolTip": "PAW.Architecture\\Extensions\\DateTimeExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T03:32:29.768Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PAW.Mvc\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-07T04:08:59.341Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CatalogController.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Controllers\\CatalogController.cs",
-              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\CatalogController.cs",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Mvc\\Controllers\\CatalogController.cs",
-              "RelativeToolTip": "PAW.Mvc\\Controllers\\CatalogController.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAzwEkAAAAhAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.API\\Program.cs",
+              "RelativeDocumentMoniker": "PAW.API\\Program.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.API\\Program.cs",
+              "RelativeToolTip": "PAW.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:32:53.011Z"
+              "WhenOpened": "2025-06-12T03:29:22.953Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CatalogService.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Services\\CatalogService.cs",
-              "RelativeDocumentMoniker": "PAW.Services\\CatalogService.cs",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Services\\CatalogService.cs",
-              "RelativeToolTip": "PAW.Services\\CatalogService.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAwwCIAAAA/AAAA",
+              "Title": "RepositoryCatalogTask.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Repositories\\RepositoryCatalogTask.cs",
+              "RelativeDocumentMoniker": "PAW.Repositories\\RepositoryCatalogTask.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Repositories\\RepositoryCatalogTask.cs",
+              "RelativeToolTip": "PAW.Repositories\\RepositoryCatalogTask.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAywBsAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:18:54.752Z"
+              "WhenOpened": "2025-06-12T03:27:52.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.MinimalApi\\Program.cs",
+              "RelativeDocumentMoniker": "PAW.MinimalApi\\Program.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.MinimalApi\\Program.cs*",
+              "RelativeToolTip": "PAW.MinimalApi\\Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T02:34:47.623Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CatalogController.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.API\\Controllers\\CatalogController.cs",
-              "RelativeDocumentMoniker": "PAW.API\\Controllers\\CatalogController.cs",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.API\\Controllers\\CatalogController.cs",
-              "RelativeToolTip": "PAW.API\\Controllers\\CatalogController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAANAAAA",
+              "Title": "RepositoryBase.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Repositories\\RepositoryBase.cs",
+              "RelativeDocumentMoniker": "PAW.Repositories\\RepositoryBase.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Repositories\\RepositoryBase.cs",
+              "RelativeToolTip": "PAW.Repositories\\RepositoryBase.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAE8AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T03:28:26.211Z",
+              "WhenOpened": "2025-06-12T02:28:48.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CatalogFactory.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.MinimalApi\\Factory\\CatalogFactory.cs",
+              "RelativeDocumentMoniker": "PAW.MinimalApi\\Factory\\CatalogFactory.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.MinimalApi\\Factory\\CatalogFactory.cs",
+              "RelativeToolTip": "PAW.MinimalApi\\Factory\\CatalogFactory.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T02:28:29.634Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "BusinessCatalog.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Business\\BusinessCatalog.cs",
-              "RelativeDocumentMoniker": "PAW.Business\\BusinessCatalog.cs",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Business\\BusinessCatalog.cs",
-              "RelativeToolTip": "PAW.Business\\BusinessCatalog.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAswBwAAAB4AAAA",
+              "Title": "Catalog.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAWModels\\Catalog.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\PAWModels\\Catalog.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAWModels\\Catalog.cs",
+              "RelativeToolTip": "PAW.Models\\PAWModels\\Catalog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T02:52:54.005Z"
+              "WhenOpened": "2025-06-12T02:20:59.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CatalogTask.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\Entities\\CatalogTask.cs",
+              "RelativeDocumentMoniker": "PAW.Models\\Entities\\CatalogTask.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\Entities\\CatalogTask.cs",
+              "RelativeToolTip": "PAW.Models\\Entities\\CatalogTask.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T02:15:29.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BusinessCatalog.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Business\\BusinessCatalog.cs",
+              "RelativeDocumentMoniker": "PAW.Business\\BusinessCatalog.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Business\\BusinessCatalog.cs",
+              "RelativeToolTip": "PAW.Business\\BusinessCatalog.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAswBsAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T01:14:34.464Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Catalog.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Models\\Entities\\Catalog.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\Entities\\Catalog.cs",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Models\\Entities\\Catalog.cs",
-              "RelativeToolTip": "PAW.Models\\Entities\\Catalog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "CatalogDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\MSSql\\CatalogDbContext.cs",
+              "RelativeDocumentMoniker": "PAW.Data\\MSSql\\CatalogDbContext.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\MSSql\\CatalogDbContext.cs",
+              "RelativeToolTip": "PAW.Data\\MSSql\\CatalogDbContext.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAswEYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T02:32:44.638Z"
+              "WhenOpened": "2025-06-12T00:41:42.209Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Catalog.cs",
-              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Models\\PAWModels\\Catalog.cs",
-              "RelativeDocumentMoniker": "PAW.Models\\PAWModels\\Catalog.cs",
-              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Pharmacy_Store\\PAW\\PAW.Models\\PAWModels\\Catalog.cs",
-              "RelativeToolTip": "PAW.Models\\PAWModels\\Catalog.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Title": "scripts.tt",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\Resources\\scripts.tt",
+              "RelativeDocumentMoniker": "PAW.Data\\Resources\\scripts.tt",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\Resources\\scripts.tt",
+              "RelativeToolTip": "PAW.Data\\Resources\\scripts.tt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-06-12T00:34:17.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CatalogController.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\Controllers\\CatalogController.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Controllers\\CatalogController.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\Controllers\\CatalogController.cs",
+              "RelativeToolTip": "PAW.Mvc\\Controllers\\CatalogController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T02:32:09.641Z"
+              "WhenOpened": "2025-06-11T07:38:56.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CatalogController.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.API\\Controllers\\CatalogController.cs",
+              "RelativeDocumentMoniker": "PAW.API\\Controllers\\CatalogController.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.API\\Controllers\\CatalogController.cs",
+              "RelativeToolTip": "PAW.API\\Controllers\\CatalogController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T07:26:39.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Converter.cs",
+              "DocumentMoniker": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\Helper\\Converters\\Converter.cs",
+              "RelativeDocumentMoniker": "PAW.Mvc\\Helper\\Converters\\Converter.cs",
+              "ToolTip": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\Helper\\Converters\\Converter.cs",
+              "RelativeToolTip": "PAW.Mvc\\Helper\\Converters\\Converter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T07:25:10.314Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -14,7 +14,7 @@ namespace PAW.Models
         string? ModifiedBy { get; set; }
         string? CreatedBy { get; set; }
         DateTime? ModifiedDate { get; set; }
-        DateTime? CreateddDate { get; set; }
+        DateTime? CreatedDate { get; set; }
     }
 
     public class Entity : IEntity
@@ -28,7 +28,7 @@ namespace PAW.Models
         [NotMapped]
         public DateTime? ModifiedDate { get; set; }
         [NotMapped]
-        public DateTime? CreateddDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
         [NotMapped]
         public bool? isDirty { get; set; }
     }

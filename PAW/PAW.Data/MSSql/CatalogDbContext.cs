@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using PAW.Models;
 
-namespace PAW.MSSql;
+namespace PAW.Data.Models;
 
 public partial class CatalogDbContext : DbContext
 {
@@ -18,11 +18,11 @@ public partial class CatalogDbContext : DbContext
 
     public virtual DbSet<Catalog> Catalogs { get; set; }
 
-
+    public virtual DbSet<CatalogTask> CatalogTasks { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseSqlServer("Server=DESKTOP-8BA4HP9\\SQLEXPRESS;Database=CatalogDB;Trusted_Connection=True;TrustServerCertificate=True;");
+        => optionsBuilder.UseSqlServer("Server=(localdb)\\MSSQLLocalDB;Database=CatalogDB;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -36,6 +36,43 @@ public partial class CatalogDbContext : DbContext
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .HasColumnName("name");
+        });
+
+        modelBuilder.Entity<CatalogTask>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.Property(e => e.CreatedBy)
+                .HasMaxLength(50)
+                .HasColumnName("createdBy");
+            entity.Property(e => e.CreatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("createdDate");
+            entity.Property(e => e.Description)
+                .HasMaxLength(200)
+                .HasColumnName("description");
+            entity.Property(e => e.Id)
+                .ValueGeneratedOnAdd()
+                .HasColumnType("numeric(18, 0)")
+                .HasColumnName("id");
+            entity.Property(e => e.ModifiedBy)
+                .HasMaxLength(50)
+                .HasColumnName("modifiedBy");
+            entity.Property(e => e.ModifiedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("modifiedDate");
+            entity.Property(e => e.Name)
+                .HasMaxLength(50)
+                .HasColumnName("name");
+            entity.Property(e => e.Status)
+                .HasColumnType("numeric(18, 0)")
+                .HasColumnName("status");
+            entity.Property(e => e.TaskId)
+                .HasColumnType("numeric(18, 0)")
+                .HasColumnName("taskId");
+            entity.Property(e => e.TaskType)
+                .HasColumnType("numeric(5, 0)")
+                .HasColumnName("taskType");
         });
 
         OnModelCreatingPartial(modelBuilder);

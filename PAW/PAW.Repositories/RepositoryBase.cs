@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Internal;
+using PAW.Data.Models;
 using PAW.Models;
-using PAW.MSSql;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 

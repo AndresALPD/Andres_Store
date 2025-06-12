@@ -16,7 +16,7 @@ namespace PAW.Core.Extensions
             {
                 if (entity.TempID <= 0)
                 {
-                    entity.CreateddDate = DateTime.Now;
+                    entity.CreatedDate = DateTime.Now;
                     entity.CreatedBy = user;
                 }
                 else

@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IBusinessCatalog, BusinessCatalog>();
 builder.Services.AddScoped<IRepositoryCatalog, RepositoryCatalog>();
+builder.Services.AddScoped<IRepositoryCatalogTask, RepositoryCatalogTask>();
 
 var app = builder.Build();
 
