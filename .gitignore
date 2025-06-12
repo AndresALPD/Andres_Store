@@ -1,5 +1,126 @@
-﻿/Andres_Store/bin/
-/Andres_Store/obj/
-/.idea/
-/.vs/
-/PAW/.vs/PAW/FileContentIndex/
+# Build results
+bin/
+obj/
+out/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache files
+.vs/
+.vscode/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Entity Framework Migrations
+Migrations/
+
+# Logs
+*.log
+
+# Resharper files
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Rider files (por si usas Rider ocasionalmente)
+.idea/
+
+# IIS Express
+*.vspscc
+*.vssscc
+*.dbmdl
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/packages/*
+!**/packages/build/
+!**/packages/repositories.config
+
+# Optional: Uncomment if using Paket
+# .paket/paket.exe
+# paket-files/
+
+# Azure Web Apps deployments
+.publish/
+
+# Web Deploy publish folder
+**/Properties/PublishProfiles/
+
+# Bundle output folder
+**/bundle/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build results of VS2019 and newer
+Generated_Code/
+
+# Coverage reports
+TestResults/
+*.coverage
+*.coveragexml
+
+# NCrunch
+_NCrunch_*
+.*crunch*.local.xml
+
+# SonarQube
+.sonar/
+
+# Rider & JetBrains workspace
+.idea/
+
+# Backup & patch files
+*.orig
+*.bak
+*.patch
+
+# dotenv environment files
+.env
+
+# Local database files
+App_Data/
+
+# Others
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Mac files
+.DS_Store
+
+# Git itself
+.gitignore
+
+# Folder specific (por si acaso)
+PAW/API/bin/
+PAW/API/obj/
+PAW.MinimalApi/bin/
+PAW.MinimalApi/obj/
+PAW.Mvc/bin/
+PAW.Mvc/obj/
+PAW.Core/bin/
+PAW.Core/obj/
+PAW.Business/bin/
+PAW.Business/obj/
+PAW.Architecture/bin/
+PAW.Architecture/obj/
+PAW.Repositories/bin/
+PAW.Repositories/obj/
+PAW.Services/bin/
+PAW.Services/obj/
+PAW.Models/bin/
+PAW.Models/obj/
+PAW.Data/bin/
+PAW.Data/obj/
