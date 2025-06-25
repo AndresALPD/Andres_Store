@@ -186,3 +186,7 @@ C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.MinimalApi\obj\Debug\net8.0\scope
 C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.MinimalApi\obj\Debug\net8.0\PAW.Mini.1E0786EA.Up2Date
 C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.MinimalApi\obj\Debug\net8.0\PAW.MinimalApi.genruntimeconfig.cache
 C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.MinimalApi\obj\Debug\net8.0\ref\PAW.MinimalApi.dll
+C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.MinimalApi\bin\Debug\net8.0\PAW.Business.dll
+C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.MinimalApi\bin\Debug\net8.0\PAW.Core.dll
+C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.MinimalApi\bin\Debug\net8.0\PAW.Business.pdb
+C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.MinimalApi\bin\Debug\net8.0\PAW.Core.pdb

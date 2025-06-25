@@ -33,9 +33,24 @@ public partial class CatalogDbContext : DbContext
             entity.ToTable("Catalog");
 
             entity.Property(e => e.Identifier).HasColumnName("identifier");
+            entity.Property(e => e.CreatedBy)
+                .HasMaxLength(50)
+                .HasColumnName("createdBy");
+            entity.Property(e => e.CreatedDate)
+                .HasColumnType("datetime")
+                .HasColumnName("createdDate");
+            entity.Property(e => e.Description)
+                .HasMaxLength(500)
+                .HasColumnName("description");
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .HasColumnName("name");
+            entity.Property(e => e.Rating)
+                .HasColumnType("numeric(5, 0)")
+                .HasColumnName("rating");
+            entity.Property(e => e.Sku)
+                .HasMaxLength(10)
+                .HasColumnName("sku");
         });
 
         modelBuilder.Entity<CatalogTask>(entity =>

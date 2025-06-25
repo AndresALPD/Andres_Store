@@ -16,8 +16,16 @@ namespace PAW.Mvc.Controllers
         // GET: Catalog
         public async Task<IActionResult> Index()
         {
-            var catalogs = await catalogService.GetCatalogsAsync();
-            return View(catalogs);
+            try
+            {
+                var catalogs = await catalogService.GetCatalogsAsync();
+                return View(catalogs);
+            }
+            catch (Exception ex)
+            {
+                TempData["ErrorMessage"] = $@"An unexpected error has occured. Double check with your IT Admnin. Detail: {ex.Message}";
+                return View(Enumerable.Empty<Catalog>());
+            }
         }
 
         // GET: Catalog/Details/5

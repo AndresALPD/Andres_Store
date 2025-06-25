@@ -4,32 +4,36 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Catalogs Page</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<hr />
+
+
+<table class="table table-condensed table-bordered table-dark table-hover">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th></th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>SKU</th>
+            <th>Created Date</th>
+            <th>Rating</th>
+            <th>Actions</th>
         </tr>
-    </thead>
+    </thead> 
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Identifier">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Identifier">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Identifier">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var c in Model)
+        {
+            <tr>
+                <td><input type="text" class="form-control" value="@c.Name" /></td>
+                <td><input type="text" class="form-control" value="@c.Description" /></td>
+                <td><input type="text" class="form-control" value="@c.Sku" /></td>
+                <td><input type="text" class="form-control" value="@c.CreatedDate" /></td>
+                <td><input type="text" class="form-control" value="@c.Rating" /></td>
+                <td>
+                    <button onclick="save()"class="btn btn-primary">Save</button>
+                    <button onclick="delete(@c.Identifier)" class="btn btn-danger">Delete</button>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
