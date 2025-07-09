@@ -1017,6 +1017,16 @@
           "bin/placeholder/PAW.Architecture.dll": {}
         }
       },
+      "PAW.FluentAPI/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/PAW.FluentAPI.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PAW.FluentAPI.dll": {}
+        }
+      },
       "PAW.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2821,6 +2831,11 @@
       "path": "../PAW.Architecture/PAW.Architecture.csproj",
       "msbuildProject": "../PAW.Architecture/PAW.Architecture.csproj"
     },
+    "PAW.FluentAPI/1.0.0": {
+      "type": "project",
+      "path": "../PAW.FluentAPI/PAW.FluentAPI.csproj",
+      "msbuildProject": "../PAW.FluentAPI/PAW.FluentAPI.csproj"
+    },
     "PAW.Models/1.0.0": {
       "type": "project",
       "path": "../PAW.Models/PAW.Models.csproj",
@@ -2829,7 +2844,8 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "PAW.Architecture >= 1.0.0"
+      "PAW.Architecture >= 1.0.0",
+      "PAW.FluentAPI >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2862,6 +2878,9 @@
           "projectReferences": {
             "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj": {
               "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj"
+            },
+            "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.FluentAPI\\PAW.FluentAPI.csproj": {
+              "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.FluentAPI\\PAW.FluentAPI.csproj"
             }
           }
         }

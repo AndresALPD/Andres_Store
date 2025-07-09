@@ -85,9 +85,6 @@ public partial class CatalogDbContext : DbContext
             entity.Property(e => e.TaskId)
                 .HasColumnType("numeric(18, 0)")
                 .HasColumnName("taskId");
-            entity.Property(e => e.TaskType)
-                .HasColumnType("numeric(5, 0)")
-                .HasColumnName("taskType");
         });
 
         OnModelCreatingPartial(modelBuilder);

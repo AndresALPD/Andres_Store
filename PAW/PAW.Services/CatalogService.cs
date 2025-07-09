@@ -1,6 +1,8 @@
 ﻿using APW.Architecture;
 using PAW.Architecture.Providers;
 using PAW.Models;
+using PAW.Models.PAWModels;
+using PAW.Models.ViewModels;
 using System.Text.Json;
 
 namespace PAW.Services
@@ -11,6 +13,7 @@ namespace PAW.Services
         Task<IEnumerable<Catalog>> GetCatalogsAsync();
         Task<bool> DeleteCatalogAsync(int id);
         Task<bool> SaveCatalogsAsync(IEnumerable<Catalog> catalog);
+        Task<IEnumerable<CatalogViewModel>> FilterCatalogAsync(ConditionViewModel content);
     }
 
     public class CatalogService(IRestProvider restProvider) : ICatalogService
@@ -34,6 +37,13 @@ namespace PAW.Services
             var result = await restProvider.DeleteAsync("https://localhost:7285/Catalog/", $"{id}");
             //var isSaved = JsonProvider.DeserializeSimple<bool>(result);
             return true;
+        }
+
+        public async Task<IEnumerable<CatalogViewModel>> FilterCatalogAsync(ConditionViewModel content)
+        {
+            var result = await restProvider.PostAsync("https://localhost:7285/Catalog/filter", JsonProvider.Serialize(content));
+            var catalogs = await JsonProvider.DeserializeAsync<IEnumerable<CatalogViewModel>>(result);
+            return catalogs;
         }
 
         public async Task<bool> SaveCatalogsAsync(IEnumerable<Catalog> catalog)

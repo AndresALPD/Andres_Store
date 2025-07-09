@@ -51,3 +51,5 @@ C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Services\obj\Debug\net8.0\PAW.Ser
 C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Services\obj\Debug\net8.0\refint\PAW.Services.dll
 C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Services\obj\Debug\net8.0\PAW.Services.pdb
 C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Services\obj\Debug\net8.0\ref\PAW.Services.dll
+C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Services\bin\Debug\net8.0\PAW.FluentAPI.dll
+C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Services\bin\Debug\net8.0\PAW.FluentAPI.pdb

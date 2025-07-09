@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PAW.Mvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd2613dd51cfcc3bd25ab54d93abe00712b93c63")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6c837d202b25b7c1c1fd45a6220f05919548b77")]
 [assembly: System.Reflection.AssemblyProductAttribute("PAW.Mvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PAW.Mvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

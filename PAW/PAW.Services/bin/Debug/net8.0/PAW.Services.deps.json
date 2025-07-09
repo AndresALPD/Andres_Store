@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "PAW.Services/1.0.0": {
         "dependencies": {
-          "PAW.Architecture": "1.0.0"
+          "PAW.Architecture": "1.0.0",
+          "PAW.FluentAPI": "1.0.0"
         },
         "runtime": {
           "PAW.Services.dll": {}
@@ -622,6 +623,11 @@
           "PAW.Architecture.dll": {}
         }
       },
+      "PAW.FluentAPI/1.0.0": {
+        "runtime": {
+          "PAW.FluentAPI.dll": {}
+        }
+      },
       "PAW.Models/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "9.0.6",
@@ -1032,6 +1038,11 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "PAW.Architecture/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PAW.FluentAPI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using PAW.Models;
-using APW.Architecture;
+using PAW.Models.PAWModels;
+using PAW.Models.ViewModels;
 using PAW.Services;
+using System.Text.Json;
 
 namespace PAW.Mvc.Controllers
 {
@@ -18,6 +15,25 @@ namespace PAW.Mvc.Controllers
         {
             try
             {
+                if (TempData["data"] != null)
+                {
+                    var jsonData = TempData["data"] as string;
+                    var data = JsonSerializer.Deserialize<List<CatalogViewModel>>(jsonData);
+                    if (data != null)
+                    {
+                        return View(data.Select(x => new Catalog()
+                        {
+                            Identifier = x.Identifier,
+                            Name = x.Name,
+                            Description = x.Description,
+                            Rating = x.Rating,
+                            Sku = x.Sku,
+                            CreatedBy = x.CreatedBy,
+                            CreatedDate = x.CreatedDate,
+                        }));
+                    }
+                }
+                //throw new Exception("");
                 var catalogs = await catalogService.GetCatalogsAsync();
                 return View(catalogs);
             }
@@ -28,99 +44,23 @@ namespace PAW.Mvc.Controllers
             }
         }
 
-        // GET: Catalog/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var catalog = await catalogService.GetCatalogAsync(id ?? 0);
-            if (catalog == null)
-            {
-                return NotFound();
-            }
-
-            return View(catalog);
-        }
-
-        // GET: Catalog/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Catalog/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Identifier,Name")] Catalog catalog)
-        {
-            //if (ModelState.IsValid)
-            //{
-                var result = await catalogService.SaveCatalogsAsync([catalog]);
-                return RedirectToAction(nameof(Index));
-            //}
-            return View(catalog);
-        }
-
-        // GET: Catalog/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var catalog = await catalogService.GetCatalogAsync(id ?? 0);
-            if (catalog == null)
-            {
-                return NotFound();
-            }
-            return View(catalog);
-        }
-
         // POST: Catalog/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Identifier,Name")] Catalog catalog)
+        public async Task<IActionResult> Save([FromBody] Catalog catalog)
         {
-            if (id != catalog.Identifier)
+            try
             {
-                return NotFound();
+                var result = await catalogService.SaveCatalogsAsync([catalog]);
+                if (result)
+                    TempData["ErrorMessage"] = $@"Item has been saved successfully";
             }
-
-            if (ModelState.IsValid)
+            catch
             {
-                try
-                {
-                    var result = await catalogService.SaveCatalogsAsync([catalog]);
-                }
-                catch 
-                {
-                    throw; 
-                }
-                return RedirectToAction(nameof(Index));
+                throw;
             }
-            return View(catalog);
-        }
-
-        // GET: Catalog/Delete/5
-        public async Task<IActionResult> Delete(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-            var catalog = await catalogService.GetCatalogAsync((int)id);
-            if (catalog == null)
-                return NotFound();
-            
-            return View(catalog);
+            return await Index();
         }
 
         // POST: Catalog/Delete/5
@@ -135,5 +75,14 @@ namespace PAW.Mvc.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Search(ConditionViewModel model)
+        {
+            var filteredData = await catalogService.FilterCatalogAsync(model);
+            TempData["data"] = JsonSerializer.Serialize(filteredData);
+            return RedirectToAction("Index");
+        }
+
     }
 }
