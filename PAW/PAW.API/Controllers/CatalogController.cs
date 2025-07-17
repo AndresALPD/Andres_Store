@@ -1,50 +1,36 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PAW.Business;
-using PAW.Models;
-using PAW.Models.PAWModels;
-using PAW.Models.ViewModels;
+using PAW2.Business;
+using PAW2.Models.ViewModels;
 
-namespace PAW.API.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class CatalogController(IBusinessCatalog businessCatalog) : Controller
+namespace PAW2.API.Controllers
 {
-	[HttpGet(Name = "GetCatalogs")]
-	public async Task<IEnumerable<Catalog>> GetAll()
-	{
-		return await businessCatalog.GetAllCatalogsAsync();
-	}
+    [ApiController]
+    [Route("api/[controller]")]
+    public class CatalogController : ControllerBase
+    {
+        private readonly BusinessCatalog _business = new();
 
-	[HttpGet("{id:int}", Name = "GetCatalogById")]
-	public async Task<ActionResult<Catalog>> GetById(int id)
-	{
-		var catalog = await businessCatalog.GetCatalogAsync(id);
-		return catalog;
-	}
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var data = await _business.GetAllAsync();
+            return Ok(data);
+        }
 
-	[HttpPost("filter", Name = "FilterCatalogs")]
-	public async Task<IEnumerable<CatalogViewModel>> Filter(ConditionViewModel condition)
-	{
-		var predicate = ConditionResolver.ResolveCondition(condition.Criteria, condition.Property, condition.Value, condition.Start, condition.End);
-		var results = await businessCatalog.Filter(predicate);
-		return results;
-	}
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var item = await _business.GetByIdAsync(id);
+            if (item == null) return NotFound();
+            return Ok(item);
+        }
 
-	[HttpPost]
-	public async Task<bool> Save([FromBody] IEnumerable<Catalog> catalogs)
-	{
-		foreach (var item in catalogs)
-		{
-			await businessCatalog.SaveCatalogAsync(item);
-		}
-		return true;
-	}
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CatalogViewModel model)
+        {
+            var result = await _business.CreateAsync(model);
+            return Ok(result);
+        }
 
-	[HttpDelete]
-	public async Task<bool> Delete(Catalog catalog)
-	{
-		return await businessCatalog.DeleteCatalogAsync(catalog);
-	}
+    }
 }
-

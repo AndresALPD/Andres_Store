@@ -1,0 +1,119 @@
+﻿@model List<PAW2.Models.ViewModels.InventoryViewModel>
+
+@{
+    ViewData["Title"] = "Inventory Management";
+}
+
+<h2 class="mt-4 mb-3">Inventory Management</h2>
+
+<button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#createModal">
+    Add New Inventory
+</button>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Inventory ID</th>
+            <th>Unit Price</th>
+            <th>Date Added</th>
+            <th>Last Updated</th>
+            <th>Modified By</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var inventory in Model)
+        {
+            <tr>
+                <td>@inventory.InventoryId</td>
+                <td>@inventory.UnitPrice</td>
+                <td>@inventory.DateAdded?.ToShortDateString()</td>
+                <td>@inventory.LastUpdated?.ToShortDateString()</td>
+                <td>@inventory.ModifiedBy</td>
+                <td>
+                    <button class="btn btn-sm btn-warning" data-bs-toggle="modal" data-bs-target="#editModal_@inventory.InventoryId">Edit</button>
+                    <button class="btn btn-sm btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal_@inventory.InventoryId">Delete</button>
+                </td>
+            </tr>
+
+            <!-- Edit Modal -->
+            <div class="modal fade" id="editModal_@inventory.InventoryId" tabindex="-1" aria-labelledby="editModalLabel_@inventory.InventoryId" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form asp-action="Edit" asp-controller="Inventory" method="post">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Edit Inventory</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="hidden" name="InventoryId" value="@inventory.InventoryId" />
+                                <div class="mb-3">
+                                    <label class="form-label">Unit Price</label>
+                                    <input type="number" step="0.01" class="form-control" name="UnitPrice" value="@inventory.UnitPrice" required />
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Modified By</label>
+                                    <input type="text" class="form-control" name="ModifiedBy" value="@inventory.ModifiedBy" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-success">Save</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delete Modal -->
+            <div class="modal fade" id="deleteModal_@inventory.InventoryId" tabindex="-1" aria-labelledby="deleteModalLabel_@inventory.InventoryId" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form asp-action="Delete" asp-controller="Inventory" method="post">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Delete Inventory</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="hidden" name="InventoryId" value="@inventory.InventoryId" />
+                                <p>Are you sure you want to delete this inventory?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </tbody>
+</table>
+
+<!-- Create Modal -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Create" asp-controller="Inventory" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add New Inventory</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Unit Price</label>
+                        <input type="number" step="0.01" class="form-control" name="UnitPrice" required />
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Modified By</label>
+                        <input type="text" class="form-control" name="ModifiedBy" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

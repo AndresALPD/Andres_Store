@@ -1,88 +1,71 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PAW.Models;
-using PAW.Models.PAWModels;
-using PAW.Models.ViewModels;
-using PAW.Services;
-using System.Text.Json;
+using PAW2.Models.ViewModels;
+using PAW2.Services;
 
-namespace PAW.Mvc.Controllers
+namespace PAW2.Mvc.Controllers
 {
-    public class CatalogController(ICatalogService catalogService) : Controller
-    {
+	public class CatalogController : Controller
+	{
+		private readonly CatalogService _service;
 
-        // GET: Catalog
-        public async Task<IActionResult> Index()
-        {
-            try
-            {
-                if (TempData["data"] != null)
-                {
-                    var jsonData = TempData["data"] as string;
-                    var data = JsonSerializer.Deserialize<List<CatalogViewModel>>(jsonData);
-                    if (data != null)
-                    {
-                        return View(data.Select(x => new Catalog()
-                        {
-                            Identifier = x.Identifier,
-                            Name = x.Name,
-                            Description = x.Description,
-                            Rating = x.Rating,
-                            Sku = x.Sku,
-                            CreatedBy = x.CreatedBy,
-                            CreatedDate = x.CreatedDate,
-                        }));
-                    }
-                }
-                //throw new Exception("");
-                var catalogs = await catalogService.GetCatalogsAsync();
-                return View(catalogs);
-            }
-            catch (Exception ex)
-            {
-                TempData["ErrorMessage"] = $@"An unexpected error has occured. Double check with your IT Admnin. Detail: {ex.Message}";
-                return View(Enumerable.Empty<Catalog>());
-            }
-        }
+		public CatalogController()
+		{
+			_service = new CatalogService();
+		}
 
-        // POST: Catalog/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        public async Task<IActionResult> Save([FromBody] Catalog catalog)
-        {
-            try
-            {
-                var result = await catalogService.SaveCatalogsAsync([catalog]);
-                if (result)
-                    TempData["ErrorMessage"] = $@"Item has been saved successfully";
-            }
-            catch
-            {
-                throw;
-            }
-            return await Index();
-        }
+		public async Task<IActionResult> Index()
+		{
+			var data = await _service.GetAllAsync();
+			return View(data);
+		}
 
-        // POST: Catalog/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var found = await catalogService.GetCatalogAsync((int)id);
-            if (found != null)
-            {
-                var result = await catalogService.DeleteCatalogAsync((int)id);
-            }
-            return RedirectToAction(nameof(Index));
-        }
+		public IActionResult Create()
+		{
+			return View(new CatalogViewModel());
+		}
 
-        [HttpPost]
-        public async Task<IActionResult> Search(ConditionViewModel model)
-        {
-            var filteredData = await catalogService.FilterCatalogAsync(model);
-            TempData["data"] = JsonSerializer.Serialize(filteredData);
-            return RedirectToAction("Index");
-        }
+		[HttpPost]
+		public async Task<IActionResult> Create(CatalogViewModel model)
+		{
+			if (!ModelState.IsValid) return View(model);
 
-    }
+			await _service.CreateAsync(model);
+			TempData["Success"] = "Catalog created successfully.";
+			return RedirectToAction("Index");
+		}
+
+		public async Task<IActionResult> Edit(int id)
+		{
+			var model = await _service.GetByIdAsync(id);
+			if (model == null) return NotFound();
+
+			return View(model);
+		}
+
+		[HttpPost]
+		public async Task<IActionResult> Edit(CatalogViewModel model)
+		{
+			if (!ModelState.IsValid) return View(model);
+
+			await _service.UpdateAsync(model.Identifier, model);
+			TempData["Success"] = "Catalog updated successfully.";
+			return RedirectToAction("Index");
+		}
+
+		public async Task<IActionResult> Delete(int id)
+		{
+			var model = await _service.GetByIdAsync(id);
+			if (model == null) return NotFound();
+
+			return View(model);
+		}
+
+		[HttpPost, ActionName("Delete")]
+		public async Task<IActionResult> DeleteConfirmed(int id)
+		{
+			await _service.DeleteAsync(id);
+			TempData["Success"] = "Catalog deleted successfully.";
+			return RedirectToAction("Index");
+		}
+	}
 }

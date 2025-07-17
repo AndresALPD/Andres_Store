@@ -1,40 +1,29 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
 using System.Text.Json.Serialization;
 
-namespace PAW.Models.ViewModels;
-
-public class CatalogViewModel
+namespace PAW2.Models.ViewModels
 {
-    [JsonPropertyName("tempID")]
-    public int TempID { get; set; }
+    public class CatalogViewModel
+    {
+        [JsonPropertyName("identifier")]
+        public int Identifier { get; set; }
 
-    [JsonPropertyName("identifier")]
-    public int Identifier { get; set; }
+        [JsonPropertyName("name")]
+        public string? Name { get; set; }
 
-    [Required]
-    [JsonPropertyName("name")]
-    [Display(Name = "Name")]
-    public string Name { get; set; } = null!;
+        [JsonPropertyName("description")]
+        public string? Description { get; set; }
 
-    [JsonPropertyName("description")]
-    [Display(Name = "Description")]
-    public string? Description { get; set; }
+        [JsonPropertyName("sku")]
+        public string? Sku { get; set; }
 
-    [JsonPropertyName("sku")]
-    [Display(Name = "SKU")]
-    public string? Sku { get; set; }
+        [JsonPropertyName("rating")]
+        public decimal? Rating { get; set; }
 
-    [JsonPropertyName("createdDate")]
-    [Display(Name = "Created Date")]
-    [DataType(DataType.Date)]
-    public DateTime? CreatedDate { get; set; }
+        [JsonPropertyName("createdDate")]
+        public DateTime? CreatedDate { get; set; }
 
-    [JsonPropertyName("createdBy")]
-    [Display(Name = "Created By")]
-    public string? CreatedBy { get; set; }
-
-    [JsonPropertyName("rating")]
-    [Display(Name = "Rating")]
-    [Range(0, 5, ErrorMessage = "Rating must be between 0 and 5.")]
-    public decimal? Rating { get; set; }
+        [JsonPropertyName("createdBy")]
+        public string? CreatedBy { get; set; }
+    }
 }

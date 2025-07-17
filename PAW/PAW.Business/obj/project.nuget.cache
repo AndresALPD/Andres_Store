@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qmJVCS1sIYQ=",
+  "dgSpecHash": "CJLRMkhXA6o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Business\\PAW.Business.csproj",
+  "projectFilePath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Business\\PAW2.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\XPC\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\XPC\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

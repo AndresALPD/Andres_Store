@@ -1,0 +1,161 @@
+﻿@model IEnumerable<PAW2.Models.ViewModels.ProductViewModel>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h1 class="mb-4">Product Management</h1>
+
+<button class="btn btn-success mb-3" data-bs-toggle="modal" data-bs-target="#createModal">Create New Product</button>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Product Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Supplier</th>
+            <th>Inventory</th>
+            <th>Rating</th>
+            <th>Modified</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProductName</td>
+                <td>@product.Description</td>
+                <td>@product.CategoryId</td>
+                <td>@product.SupplierId</td>
+                <td>@product.InventoryId</td>
+                <td>@product.Rating</td>
+                <td>@product.LastModified?.ToString("g")</td>
+                <td>
+                    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal-@product.ProductId">Edit</button>
+                    <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteModal-@product.ProductId">Delete</button>
+                </td>
+            </tr>
+
+            <!-- Edit Modal -->
+            <div class="modal fade" id="editModal-@product.ProductId" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form asp-action="Edit">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Edit Product</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="hidden" name="ProductId" value="@product.ProductId" />
+                                <div class="mb-3">
+                                    <label>Product Name</label>
+                                    <input type="text" name="ProductName" value="@product.ProductName" class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Description</label>
+                                    <input type="text" name="Description" value="@product.Description" class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Category ID</label>
+                                    <input type="number" name="CategoryId" value="@product.CategoryId" class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Supplier ID</label>
+                                    <input type="number" name="SupplierId" value="@product.SupplierId" class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Inventory ID</label>
+                                    <input type="number" name="InventoryId" value="@product.InventoryId" class="form-control" />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Rating</label>
+                                    <input type="number" name="Rating" value="@product.Rating" class="form-control" step="0.01" />
+                                </div>
+                                <div class="mb-3">
+                                    <label>Modified By</label>
+                                    <input type="text" name="ModifiedBy" value="@product.ModifiedBy" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delete Modal -->
+            <div class="modal fade" id="deleteModal-@product.ProductId" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <form asp-action="Delete">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Delete Product</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                Are you sure you want to delete "<strong>@product.ProductName</strong>"?
+                                <input type="hidden" name="ProductId" value="@product.ProductId" />
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        }
+    </tbody>
+</table>
+
+<!-- Create Modal -->
+<div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Create">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create Product</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label>Product Name</label>
+                        <input type="text" name="ProductName" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Description</label>
+                        <input type="text" name="Description" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Category ID</label>
+                        <input type="number" name="CategoryId" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Supplier ID</label>
+                        <input type="number" name="SupplierId" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Inventory ID</label>
+                        <input type="number" name="InventoryId" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Rating</label>
+                        <input type="number" name="Rating" class="form-control" step="0.01" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Modified By</label>
+                        <input type="text" name="ModifiedBy" class="form-control" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Create</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

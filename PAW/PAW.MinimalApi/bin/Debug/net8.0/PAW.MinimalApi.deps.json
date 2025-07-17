@@ -694,6 +694,7 @@
       },
       "PAW.Data/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.6",
           "PAW.Models": "1.0.0"
         },
         "runtime": {

@@ -1004,30 +1004,30 @@
           }
         }
       },
-      "PAW.Architecture/1.0.0": {
+      "PAW2.Architecture/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "PAW.Models": "1.0.0"
+          "PAW2.Models": "1.0.0"
         },
         "compile": {
-          "bin/placeholder/PAW.Architecture.dll": {}
+          "bin/placeholder/PAW2.Architecture.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PAW.Architecture.dll": {}
+          "bin/placeholder/PAW2.Architecture.dll": {}
         }
       },
-      "PAW.FluentAPI/1.0.0": {
+      "PAW2.FluentAPI/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
-          "bin/placeholder/PAW.FluentAPI.dll": {}
+          "bin/placeholder/PAW2.FluentAPI.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PAW.FluentAPI.dll": {}
+          "bin/placeholder/PAW2.FluentAPI.dll": {}
         }
       },
-      "PAW.Models/1.0.0": {
+      "PAW2.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1035,10 +1035,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.6"
         },
         "compile": {
-          "bin/placeholder/PAW.Models.dll": {}
+          "bin/placeholder/PAW2.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PAW.Models.dll": {}
+          "bin/placeholder/PAW2.Models.dll": {}
         }
       }
     }
@@ -2826,26 +2826,26 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "PAW.Architecture/1.0.0": {
+    "PAW2.Architecture/1.0.0": {
       "type": "project",
-      "path": "../PAW.Architecture/PAW.Architecture.csproj",
-      "msbuildProject": "../PAW.Architecture/PAW.Architecture.csproj"
+      "path": "../PAW.Architecture/PAW2.Architecture.csproj",
+      "msbuildProject": "../PAW.Architecture/PAW2.Architecture.csproj"
     },
-    "PAW.FluentAPI/1.0.0": {
+    "PAW2.FluentAPI/1.0.0": {
       "type": "project",
-      "path": "../PAW.FluentAPI/PAW.FluentAPI.csproj",
-      "msbuildProject": "../PAW.FluentAPI/PAW.FluentAPI.csproj"
+      "path": "../PAW.FluentAPI/PAW2.FluentAPI.csproj",
+      "msbuildProject": "../PAW.FluentAPI/PAW2.FluentAPI.csproj"
     },
-    "PAW.Models/1.0.0": {
+    "PAW2.Models/1.0.0": {
       "type": "project",
-      "path": "../PAW.Models/PAW.Models.csproj",
-      "msbuildProject": "../PAW.Models/PAW.Models.csproj"
+      "path": "../PAW.Models/PAW2.Models.csproj",
+      "msbuildProject": "../PAW.Models/PAW2.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "PAW.Architecture >= 1.0.0",
-      "PAW.FluentAPI >= 1.0.0"
+      "PAW2.Architecture >= 1.0.0",
+      "PAW2.FluentAPI >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2854,9 +2854,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\PAW.Services.csproj",
-      "projectName": "PAW.Services",
-      "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\PAW.Services.csproj",
+      "projectUniqueName": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\PAW2.Services.csproj",
+      "projectName": "PAW2.Services",
+      "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\PAW2.Services.csproj",
       "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Services\\obj\\",
       "projectStyle": "PackageReference",
@@ -2876,11 +2876,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj": {
-              "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW.Architecture.csproj"
+            "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW2.Architecture.csproj": {
+              "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Architecture\\PAW2.Architecture.csproj"
             },
-            "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.FluentAPI\\PAW.FluentAPI.csproj": {
-              "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.FluentAPI\\PAW.FluentAPI.csproj"
+            "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.FluentAPI\\PAW2.FluentAPI.csproj": {
+              "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.FluentAPI\\PAW2.FluentAPI.csproj"
             }
           }
         }

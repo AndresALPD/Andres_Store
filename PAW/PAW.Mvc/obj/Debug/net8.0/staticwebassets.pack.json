@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PAW.Mvc.bundle.scp.css",
-      "PackagePath": "staticwebassets\\PAW.Mvc.bundle.scp.css"
+      "Id": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PAW2.Mvc.bundle.scp.css",
+      "PackagePath": "staticwebassets\\PAW2.Mvc.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Mvc\\wwwroot\\css\\site.css",
@@ -245,20 +245,20 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PAW.Mvc.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PAW2.Mvc.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PAW.Mvc.props",
-      "PackagePath": "build\\PAW.Mvc.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PAW2.Mvc.props",
+      "PackagePath": "build\\PAW2.Mvc.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PAW.Mvc.props",
-      "PackagePath": "buildMultiTargeting\\PAW.Mvc.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PAW2.Mvc.props",
+      "PackagePath": "buildMultiTargeting\\PAW2.Mvc.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PAW.Mvc.props",
-      "PackagePath": "buildTransitive\\PAW.Mvc.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PAW2.Mvc.props",
+      "PackagePath": "buildTransitive\\PAW2.Mvc.props"
     }
   ],
   "ElementsToRemove": []

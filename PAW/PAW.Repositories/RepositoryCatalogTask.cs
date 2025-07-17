@@ -4,27 +4,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using PAW.Data.Models;
 
-namespace PAW.Repositories
+namespace PAW2.Repositories
 {
-    public interface IRepositoryCatalogTask
+    public class RepositoryCatalogTask : RepositoryBase<CatalogTask>
     {
-        Task<bool> UpsertAsync(CatalogTask entity, bool isUpdating);
-        Task<bool> CreateAsync(CatalogTask entity);
-        Task<bool> DeleteAsync(CatalogTask entity);
-        Task<IEnumerable<CatalogTask>> ReadAsync();
-        Task<CatalogTask> FindAsync(int id);
-        Task<bool> UpdateAsync(CatalogTask entity);
-        Task<bool> UpdateManyAsync(IEnumerable<CatalogTask> entities);
-        Task<bool> ExistsAsync(CatalogTask entity);
-        Task<bool> CheckBeforeSavingAsync(CatalogTask entity);
-    }
-
-    public class RepositoryCatalogTask : RepositoryBase<CatalogTask>, IRepositoryCatalogTask
-    {
-        public Task<bool> CheckBeforeSavingAsync(CatalogTask entity)
+        public RepositoryCatalogTask() : base()
         {
-            throw new NotImplementedException();
         }
     }
 }

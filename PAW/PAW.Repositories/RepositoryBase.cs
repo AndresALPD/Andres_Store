@@ -5,7 +5,7 @@ using PAW.Models;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 
-namespace PAW.Repositories;
+namespace PAW2.Repositories;
 
 /// <summary>
 /// Interface for basic repository operations.
@@ -77,8 +77,8 @@ public interface IRepositoryBase<T>
 /// <typeparam name="T">Entity type.</typeparam>
 public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
 {
-    private readonly CatalogDbContext _context;
-    protected CatalogDbContext DbContext => _context;
+    private readonly CatalogDbtask2Context _context;
+    protected CatalogDbtask2Context DbContext => _context;
     protected DbSet<T> DbSet;
 
     /// <summary>
@@ -86,7 +86,7 @@ public abstract class RepositoryBase<T> : IRepositoryBase<T> where T : class
     /// </summary>
     public RepositoryBase()
     {
-        _context = new CatalogDbContext();
+        _context = new CatalogDbtask2Context();
         DbSet<T> _sdbSet = _context.Set<T>();
     }
 

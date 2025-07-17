@@ -1,13 +1,10 @@
 ﻿using System;
-
 using System.Collections.Generic;
 
 namespace PAW.Models;
 
 public partial class CatalogTask
-
 {
-
     public decimal Id { get; set; }
 
     public string Name { get; set; } = null!;
@@ -24,9 +21,7 @@ public partial class CatalogTask
 
     public string ModifiedBy { get; set; } = null!;
 
-    public string? CreatedBy { get; set; }
+    public string CreatedBy { get; set; } = null!;
 
     public decimal? TaskType { get; set; }
-
 }
-

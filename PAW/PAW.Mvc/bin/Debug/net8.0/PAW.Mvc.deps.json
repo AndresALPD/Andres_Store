@@ -11,6 +11,7 @@
           "Microsoft.EntityFrameworkCore.Tools": "8.0.11",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.7",
           "PAW.Architecture": "1.0.0",
+          "PAW.Data": "1.0.0",
           "PAW.Models": "1.0.0",
           "PAW.Services": "1.0.0"
         },
@@ -1977,6 +1978,15 @@
           "PAW.Architecture.dll": {}
         }
       },
+      "PAW.Data/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.6",
+          "PAW.Models": "1.0.0"
+        },
+        "runtime": {
+          "PAW.Data.dll": {}
+        }
+      },
       "PAW.FluentAPI/1.0.0": {
         "runtime": {
           "PAW.FluentAPI.dll": {}
@@ -3115,6 +3125,11 @@
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
     },
     "PAW.Architecture/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PAW.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

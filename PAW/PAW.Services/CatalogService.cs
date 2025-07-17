@@ -1,56 +1,49 @@
 ﻿using APW.Architecture;
 using PAW.Architecture.Providers;
-using PAW.Models;
-using PAW.Models.PAWModels;
-using PAW.Models.ViewModels;
-using System.Text.Json;
+using PAW2.Models.ViewModels;
 
-namespace PAW.Services
+namespace PAW2.Services
 {
-    public interface ICatalogService
-    {
-        Task<Catalog> GetCatalogAsync(int id);
-        Task<IEnumerable<Catalog>> GetCatalogsAsync();
-        Task<bool> DeleteCatalogAsync(int id);
-        Task<bool> SaveCatalogsAsync(IEnumerable<Catalog> catalog);
-        Task<IEnumerable<CatalogViewModel>> FilterCatalogAsync(ConditionViewModel content);
-    }
+	public class CatalogService
+	{
+		private readonly ClientRestProvider _restProvider;
+		private const string ApiUrl = "https://localhost:7285/api/Catalog";
 
-    public class CatalogService(IRestProvider restProvider) : ICatalogService
-    {
-        public async Task<Catalog> GetCatalogAsync(int id)
-        {
-            var result = await restProvider.GetAsync("https://localhost:7285/Catalog/", "1");
-            var catalog = await JsonProvider.DeserializeAsync<Catalog>(result);
-            return catalog;
-        }
+		public CatalogService()
+		{
+			_restProvider = new ClientRestProvider();
+		}
 
-        public async Task<IEnumerable<Catalog>> GetCatalogsAsync()
-        {
-            var result = await restProvider.GetAsync("https://localhost:7285/Catalog/", null);
-            var catalogs = await JsonProvider.DeserializeAsync<IEnumerable<Catalog>>(result);
-            return catalogs;
-        }
+		public async Task<List<CatalogViewModel>> GetAllAsync()
+		{
+			var json = await _restProvider.GetAsync(ApiUrl, null);
+			return JsonSerializer.DeserializeSimple<List<CatalogViewModel>>(json) ?? new();
+		}
 
-        public async Task<bool> DeleteCatalogAsync(int id)
-        {
-            var result = await restProvider.DeleteAsync("https://localhost:7285/Catalog/", $"{id}");
-            //var isSaved = JsonProvider.DeserializeSimple<bool>(result);
-            return true;
-        }
+		public async Task<CatalogViewModel?> GetByIdAsync(int id)
+		{
+			var json = await _restProvider.GetAsync(ApiUrl, id.ToString());
+			return JsonSerializer.DeserializeSimple<CatalogViewModel>(json);
+		}
 
-        public async Task<IEnumerable<CatalogViewModel>> FilterCatalogAsync(ConditionViewModel content)
-        {
-            var result = await restProvider.PostAsync("https://localhost:7285/Catalog/filter", JsonProvider.Serialize(content));
-            var catalogs = await JsonProvider.DeserializeAsync<IEnumerable<CatalogViewModel>>(result);
-            return catalogs;
-        }
+		public async Task<bool> CreateAsync(CatalogViewModel model)
+		{
+			var json = JsonSerializer.Serialize(model);
+			await _restProvider.PostAsync(ApiUrl, json);
+			return true;
+		}
 
-        public async Task<bool> SaveCatalogsAsync(IEnumerable<Catalog> catalog)
-        {
-            var content = JsonProvider.Serialize(catalog);
-            var result = await restProvider.PostAsync("https://localhost:7285/Catalog/", content);
-            return true;
-        }
-    }
+		public async Task<bool> UpdateAsync(int id, CatalogViewModel model)
+		{
+			var json = JsonSerializer.Serialize(model);
+			await _restProvider.PutAsync(ApiUrl, id.ToString(), json);
+			return true;
+		}
+
+		public async Task<bool> DeleteAsync(int id)
+		{
+			await _restProvider.DeleteAsync(ApiUrl, id.ToString());
+			return true;
+		}
+	}
 }

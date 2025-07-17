@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PAW.Architecture\PAW2.Architecture.csproj" />
+    <ProjectReference Include="..\PAW.FluentAPI\PAW2.FluentAPI.csproj" />
+  </ItemGroup>
+
+</Project>

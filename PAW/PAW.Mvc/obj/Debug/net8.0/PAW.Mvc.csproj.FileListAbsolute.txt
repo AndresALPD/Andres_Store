@@ -752,3 +752,5 @@ C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Mvc\bin\Debug\net8.0\runtimes\win
 C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Mvc\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Mvc\bin\Debug\net8.0\PAW.FluentAPI.dll
 C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Mvc\bin\Debug\net8.0\PAW.FluentAPI.pdb
+C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Mvc\bin\Debug\net8.0\PAW.Data.dll
+C:\Users\XPC\source\repos\Andres_Store\PAW\PAW.Mvc\bin\Debug\net8.0\PAW.Data.pdb

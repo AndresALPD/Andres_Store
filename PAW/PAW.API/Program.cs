@@ -1,18 +1,28 @@
-using PAW.Business;
-using PAW.Repositories;
+using Microsoft.EntityFrameworkCore;
+using PAW.Data.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IBusinessCatalog, BusinessCatalog>();
-builder.Services.AddScoped<IRepositoryCatalog, RepositoryCatalog>();
-builder.Services.AddScoped<IRepositoryCatalogTask, RepositoryCatalogTask>();
+// Register DbContext
+builder.Services.AddDbContext<CatalogDbtask2Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// OPTIONAL: Enable CORS to allow MVC to call the API
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        builder =>
+        {
+            builder.AllowAnyOrigin()
+                   .AllowAnyMethod()
+                   .AllowAnyHeader();
+        });
+});
 
 var app = builder.Build();
 
@@ -26,6 +36,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+// Enable CORS
+app.UseCors("AllowAll");
 
 app.MapControllers();
 

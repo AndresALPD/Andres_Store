@@ -1004,7 +1004,7 @@
           }
         }
       },
-      "PAW.Models/1.0.0": {
+      "PAW2.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
@@ -1012,10 +1012,10 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.6"
         },
         "compile": {
-          "bin/placeholder/PAW.Models.dll": {}
+          "bin/placeholder/PAW2.Models.dll": {}
         },
         "runtime": {
-          "bin/placeholder/PAW.Models.dll": {}
+          "bin/placeholder/PAW2.Models.dll": {}
         }
       }
     }
@@ -2803,16 +2803,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "PAW.Models/1.0.0": {
+    "PAW2.Models/1.0.0": {
       "type": "project",
-      "path": "../PAW.Models/PAW.Models.csproj",
-      "msbuildProject": "../PAW.Models/PAW.Models.csproj"
+      "path": "../PAW.Models/PAW2.Models.csproj",
+      "msbuildProject": "../PAW.Models/PAW2.Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "Microsoft.EntityFrameworkCore.SqlServer >= 9.0.6",
-      "PAW.Models >= 1.0.0"
+      "PAW2.Models >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2821,9 +2821,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\PAW.Data.csproj",
-      "projectName": "PAW.Data",
-      "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\PAW.Data.csproj",
+      "projectUniqueName": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\PAW2.Data.csproj",
+      "projectName": "PAW2.Data",
+      "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\PAW2.Data.csproj",
       "packagesPath": "C:\\Users\\XPC\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Data\\obj\\",
       "projectStyle": "PackageReference",
@@ -2843,8 +2843,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj": {
-              "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW.Models.csproj"
+            "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW2.Models.csproj": {
+              "projectPath": "C:\\Users\\XPC\\source\\repos\\Andres_Store\\PAW\\PAW.Models\\PAW2.Models.csproj"
             }
           }
         }
