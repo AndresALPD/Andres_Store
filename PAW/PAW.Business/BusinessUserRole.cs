@@ -1,12 +1,16 @@
 ﻿using PAW2.Repositories;
 using PAW.Models;
 using PAW2.Models.ViewModels;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
+using PAW.Data.Models;
 
 namespace PAW2.Business
 {
     public class BusinessUserRole
     {
         private readonly RepositoryUserRole _repository;
+        private readonly CatalogDbtask2Context _context;
 
         public BusinessUserRole()
         {
@@ -29,6 +33,7 @@ namespace PAW2.Business
             {
                 var entity = new UserRole
                 {
+                    Id = model.Id,
                     RoldId = model.RoldId,
                     UserId = model.UserId
                 };
@@ -40,5 +45,6 @@ namespace PAW2.Business
                 throw;
             }
         }
+
     }
 }

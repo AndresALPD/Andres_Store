@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\PAW.Architecture\PAW2.Architecture.csproj" />
-    <ProjectReference Include="..\PAW.FluentAPI\PAW2.FluentAPI.csproj" />
   </ItemGroup>
 
 </Project>

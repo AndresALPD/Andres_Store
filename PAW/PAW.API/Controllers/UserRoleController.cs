@@ -28,6 +28,10 @@ namespace PAW2.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] UserRoleViewModel model)
         {
+            // Validaciones básicas
+            if (model == null || model.Id <= 0 || model.UserId == null || model.RoldId == null)
+                return BadRequest("Datos inválidos.");
+
             var result = await _business.CreateAsync(model);
             return Ok(result);
         }

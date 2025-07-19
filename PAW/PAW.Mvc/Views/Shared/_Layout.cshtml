@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="~/PAW.Mvc.styles.css" asp-append-version="true" />
     <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/darkly/bootstrap.min.css" rel="stylesheet">
 </head>
-@Html.Partial("Partial/ModalView")
 <body>
     <header class="custom-header">
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark text-for-dark border-bottom box-shadow mb-3">
@@ -93,22 +92,6 @@
                 drawer.style.transform = 'translateX(100%)';
             });
         });
-
-        function handleCriteriaChange(criteria) {
-            const valueContainer = document.getElementById('valueContainer');
-            const rangeContainer = document.getElementById('rangeContainer');
-
-            if (criteria === "Equals" || criteria === "Contains") {
-                valueContainer.classList.remove('d-none');
-                rangeContainer.classList.add('d-none');
-            } else if (criteria === "GreaterThanOrEqual" || criteria === "LessThanOrEqual") {
-                valueContainer.classList.add('d-none');
-                rangeContainer.classList.remove('d-none');
-            } else {
-                valueContainer.classList.add('d-none');
-                rangeContainer.classList.add('d-none');
-            }
-        }
     </script>
 
 </body>

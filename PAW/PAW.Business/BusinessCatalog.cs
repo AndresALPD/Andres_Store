@@ -4,7 +4,7 @@ using PAW2.Models.ViewModels;
 
 namespace PAW2.Business
 {
-    public class BusinessCatalog
+    public class BusinessCatalog : IBusinessCatalog
     {
         private readonly RepositoryCatalog _repository;
 

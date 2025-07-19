@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using PAW.Data.Models;
+using PAW.Models;
+using PAW2.Business;
+using PAW2.Models.ViewModels;
+using PAW2.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +27,11 @@ builder.Services.AddCors(options =>
                    .AllowAnyHeader();
         });
 });
+
+builder.Services.AddScoped<BusinessCatalog>();
+builder.Services.AddScoped<IBusinessCatalog>(provider =>
+    new CatalogValidationDecorator(provider.GetRequiredService<BusinessCatalog>()));
+
 
 var app = builder.Build();
 

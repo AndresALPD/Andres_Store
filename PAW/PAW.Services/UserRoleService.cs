@@ -28,10 +28,16 @@ namespace PAW2.Services
 
         public async Task<bool> CreateAsync(UserRoleViewModel model)
         {
+            // Asignar un ID único manualmente (positivo)
+            var newId = Guid.NewGuid().GetHashCode();
+            model.Id = Math.Abs(newId);
+
             var json = JsonSerializer.Serialize(model);
             await _restProvider.PostAsync(ApiUrl, json);
+
             return true;
         }
+
 
         public async Task<bool> UpdateAsync(int id, UserRoleViewModel model)
         {

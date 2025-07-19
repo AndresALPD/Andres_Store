@@ -8,7 +8,12 @@ namespace PAW2.API.Controllers
     [Route("api/[controller]")]
     public class CatalogController : ControllerBase
     {
-        private readonly BusinessCatalog _business = new();
+        private readonly IBusinessCatalog _business;
+
+        public CatalogController(IBusinessCatalog business)
+        {
+            _business = business;
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
@@ -28,9 +33,16 @@ namespace PAW2.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CatalogViewModel model)
         {
-            var result = await _business.CreateAsync(model);
-            return Ok(result);
+            try
+            {
+                var result = await _business.CreateAsync(model);
+                return Ok(result);
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
-
     }
+
 }
